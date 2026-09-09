@@ -45,7 +45,7 @@ export default function AdminPanel() {
                   <option value="admin">admin</option>
                 </select>
               </td>
-              <td>{u.isVerified ? "✅" : "❌"}</td>
+              <td>{u.isVerified ? "Verified" : "Unverified"}</td>
               <td><button className="btn-small btn-danger" onClick={() => handleDelete(u._id)}>Delete</button></td>
             </tr>
           ))}

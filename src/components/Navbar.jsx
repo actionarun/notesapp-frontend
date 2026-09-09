@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/dashboard" className="brand">📝 Notes App</Link>
+      <Link to="/dashboard" className="brand">Ledger Notes</Link>
       <div className="nav-links">
         {user ? (
           <>
