@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f4f5f7;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4f46e5;
+  color: #fff;
+  padding: 14px 24px;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 16px;
+  font-weight: 500;
+}
+
+.navbar .brand {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0;
+}
+
+/* Forms */
+.form-card {
+  max-width: 420px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn {
+  display: inline-block;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+.btn.danger {
+  background: #dc2626;
+}
+
+.btn.secondary {
+  background: #6b7280;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.success-text {
+  color: #16a34a;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.link-text {
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.link-text a {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* Notes grid */
+.notes-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.note-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.note-card-body {
+  padding: 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card-body h3 {
+  margin: 0 0 4px;
+}
+
+.note-card-body .subtitle {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.note-card-body .summary {
+  font-size: 14px;
+  color: #374151;
+  flex: 1;
+}
+
+.note-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+table.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.admin-table th,
+table.admin-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.admin {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.badge.user {
+  background: #e0f2fe;
+  color: #0284c7;
+}
